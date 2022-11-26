@@ -66,3 +66,30 @@ if __name__ == '__main__':
     print("{:.2f}".format(avg_marks))
 ```
 
+# Lists
+Initialize your list and read in the value of n followed by n lines of commands where each command will be of the 7 types listed above. 
+Iterate through each command in order and perform the corresponding operation on your list.
+```py
+if __name__ == '__main__':
+    N = int(input())
+    
+    lst = []
+    for _ in range(N):
+        cmd, *arr = input().split()
+        arr = list(map(int, arr))
+
+        if cmd == 'insert':
+            lst.insert(arr[0],arr[1]) 
+        elif cmd == 'print':
+            print(lst)
+        elif cmd == 'remove':
+            lst.remove(arr[0])
+        elif cmd == 'append':
+            lst.append(arr[0])
+        elif cmd == 'sort':
+            lst.sort()
+        elif cmd == 'pop':
+            lst.pop()
+        elif cmd == 'reverse':
+            lst.reverse()
+```
