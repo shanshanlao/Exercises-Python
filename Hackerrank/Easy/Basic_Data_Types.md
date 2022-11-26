@@ -1,7 +1,5 @@
 # Find the Runner-Up Score!
-
 Find the second largest number in the array.
-
 ```py
 if __name__ == '__main__':
     n = int(input())
@@ -17,9 +15,7 @@ if __name__ == '__main__':
 ```
 
 # Nested Lists
-
 Find all the students with the second lowest mark.
-
 ```py
 if __name__ == '__main__':
     records = []
@@ -53,3 +49,20 @@ Easier way: Use set() to get the second lowest score.
 ```py
 second_lowest_score = sorted(list(set([x[1] for x in students])))[1]
 ```
+
+# Finding the percentage
+Print the average of the marks array for the student name provided, showing 2 places after the decimal.
+```py
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    
+    avg_marks = sum(student_marks[query_name])/len(student_marks[query_name])
+    print("{:.2f}".format(avg_marks))
+```
+
