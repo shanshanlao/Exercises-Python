@@ -22,7 +22,6 @@ You are given a string. Split the string on a " " (space) delimiter and join usi
 ```py
 def split_and_join(line):
     new_line = '-'.join(line.split(" "))
-    
     return new_line
 
 if __name__ == '__main__':
@@ -30,3 +29,17 @@ if __name__ == '__main__':
     result = split_and_join(line)
     print(result)
 ```
+
+# What's Your Name?
+```py
+def print_full_name(first, last):
+    print('Hello {} {}! You just delved into python.'.format(first,last))
+
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
+```
+
+
+    
