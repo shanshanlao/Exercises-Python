@@ -76,3 +76,30 @@ if __name__ == '__main__':
     count = count_substring(string, sub_string)
     print(count)
 ```
+
+# String Validators
+Your task is to find out if the string S contains: alphanumeric characters, alphabetical characters, digits, lowercase and uppercase characters.
+```py
+if __name__ == '__main__':
+    s = input()
+    
+    anyalnum = False
+    anyalpha = False
+    anydigit = False
+    anylower = False
+    anyupper = False
+    
+    for i in s:
+        if i.isalnum():
+            anyalnum = True
+        if i.isalpha():
+            anyalpha = True
+        if i.isdigit():
+            anydigit = True
+        if i.islower():
+            anylower = True
+        if i.isupper():
+            anyupper = True
+    
+    print(anyalnum, anyalpha, anydigit, anylower, anyupper, sep='\n')
+```
