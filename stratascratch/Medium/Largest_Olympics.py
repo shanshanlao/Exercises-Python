@@ -9,5 +9,4 @@ import pandas as pd
 olympics_athletes_events.head()
 
 df = olympics_athletes_events[['name','games']]
-
 df.groupby('games')['name'].nunique().reset_index().sort_values(by='name', ascending = False).iloc[:1]
