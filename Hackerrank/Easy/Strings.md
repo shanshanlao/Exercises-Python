@@ -134,6 +134,30 @@ for i in range(thickness):
     print(((c*(thickness-i-1)).rjust(thickness)+c+(c*(thickness-i-1)).ljust(thickness)).rjust(thickness*6))
 ```
 
+# Text Wrap
+You are given a string S and width w.
+Your task is to wrap the string into a paragraph of width w.
+```py
+import textwrap
+
+def wrap(string, max_width):
+
+    new_string = string[:max_width]
+    
+    for i in range(1,len(string)):
+        if (i+max_width) % max_width == 0:
+            new_slice = string[i:i+max_width]
+            new_string = new_string + '\n' + new_slice
+    
+    return new_string
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
+```
+
+
 
 
 
