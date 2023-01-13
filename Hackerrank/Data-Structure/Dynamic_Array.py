@@ -4,14 +4,10 @@ import random
 import re
 import sys
 
-#
-# Complete the 'dynamicArray' function below.
-#
 # The function is expected to return an INTEGER_ARRAY.
 # The function accepts following parameters:
 #  1. INTEGER n
 #  2. 2D_INTEGER_ARRAY queries
-#
 
 def dynamicArray(n, queries):
     # Initialize an nested array with n arrays inside
