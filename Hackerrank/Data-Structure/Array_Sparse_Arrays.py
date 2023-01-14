@@ -1,3 +1,4 @@
+# Returns an array of integers representing the frequency of occurence of each query string in stringList.
 
 # The function is expected to return an INTEGER_ARRAY.
 # The function accepts following parameters:
