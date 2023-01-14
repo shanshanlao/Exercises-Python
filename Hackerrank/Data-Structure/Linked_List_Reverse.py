@@ -49,9 +49,13 @@ def reversePrint(llist):
             
             before = temp
             temp = after
-            
-    print_singly_linked_list(before, '\n')
-    print()
+    
+    # For "Reverse a lnked list challenge"
+    return print 
+
+    # For "Print in reverse challenge"
+    #print_singly_linked_list(before, '\n')
+    #print()
 
 ## Validation ##
 if __name__ == '__main__':
