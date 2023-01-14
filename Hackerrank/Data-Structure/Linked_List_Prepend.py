@@ -1,9 +1,4 @@
-# Function Description
 
-# insertNodeAtHead has the following parameter(s):
-# 1. SinglyLinkedListNode llist: a reference to the head of a list
-# data: the value to insert in the data field of the new node
-  
 class SinglyLinkedListNode:
     def __init__(self, node_data):
         self.data = node_data
@@ -20,7 +15,13 @@ def print_singly_linked_list(node, sep, fptr):
         node = node.next
         if node:
             fptr.write(sep)
+            
+# Function Description
 
+# insertNodeAtHead has the following parameter(s):
+# 1. SinglyLinkedListNode llist: a reference to the head of a list
+# 2. data: the value to insert in the data field of the new node
+  
 ### MY CODE ###
 def insertNodeAtHead(llist, data):
     # The input parameter is a head node! and insert value
